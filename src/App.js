@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Contact from './components/contact'
 import Foot from './components/foot'
 import Land from'./components/land'
@@ -10,7 +11,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          This is the app
           <Nav />
           <Contact />
           <Work />
