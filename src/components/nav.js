@@ -10,19 +10,19 @@ import Button from 'react-bootstrap/Button'
 const Nav = () => {
     return (
         <>
-  <Navbar bg="dark" variant="dark" fixed="top">
-    <Navbar.Brand href="#home">
-      <img
-        alt=""
-        src="/logo.svg"
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-      />{' '}
-      Bills Signs
-    </Navbar.Brand>
-  </Navbar>
-      </>
+            <Navbar bg="dark" variant="dark">
+                <Navbar.Brand href="#home">
+                <img
+                    alt=""
+                    src="../img/LogoBad.jpg"
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                />{' '}
+                React Bootstrap
+                </Navbar.Brand>
+            </Navbar>
+        </>
     )
 } 
 export default Nav

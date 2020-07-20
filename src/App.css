@@ -4,4 +4,10 @@
   display: flex;
   flex-direction: column;
 }
+ul {
+  padding: 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  list-style-type: none;
+}
 
