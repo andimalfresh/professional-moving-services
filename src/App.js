@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <div className="App">
           <Nav />
-          <Contact />
-          <Work />
+          {/* <Contact />
+          <Work /> */}
           <Land />
           <Foot />
       </div>
