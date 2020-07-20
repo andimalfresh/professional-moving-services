@@ -20,3 +20,6 @@ ul {
   padding-bottom:25px;
   justify-content: center;
 }
+a:link,a:visited { 
+  text-decoration: none; 
+}

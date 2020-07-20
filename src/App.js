@@ -4,18 +4,34 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Contact from './components/contact'
 import Foot from './components/foot'
 import Land from'./components/land'
-import Nav from './components/nav'
+import Navi from './components/navi'
 import Portfolio from './components/portfolio'
+import  {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <Nav />
-          <Land />
-          <Contact />
-          <Portfolio />
-          <Foot />
+          <Navi />
+        <Router>
+          <Switch>
+            <Route exact path='/'>
+              <Land />
+            </Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
+            <Route path='/portfolio'>
+              <Portfolio />
+            </Route>
+          </Switch>
+        </Router>
+        <Foot />
       </div>
     );
   }

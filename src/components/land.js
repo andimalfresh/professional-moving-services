@@ -1,15 +1,18 @@
 import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
-import Nav from 'react-bootstrap/Nav'
 import MapComponent from './mapcomponent'
 import ReactPlayer from "react-player"
 import {Container,Row,Col} from 'react-bootstrap'
+import Nav from 'react-bootstrap/Nav'
+// import  {
+//   Link
+// } from "react-router-dom";
 
 const Land = () => {
     return (
         <div className='LandingContainer'>
-            <Nav fill variant="tabs" defaultActiveKey="/home">
+                  <Nav fill variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>
                   <Nav.Link href="/home">Home</Nav.Link>
                 </Nav.Item>
@@ -19,7 +22,7 @@ const Land = () => {
                 <Nav.Item>
                   <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
                 </Nav.Item>
-              </Nav>
+        </Nav>
               <Container fluid className='video'>
                 <Row className='justify-content-md-center'>
                   <Col md='auto'><ReactPlayer url="https://www.youtube.com/watch?v=ug50zmP9I7s"  /></Col>

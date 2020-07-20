@@ -4,10 +4,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
+import Nav from 'react-bootstrap/Nav'
 
-
-
-const Nav = () => {
+const Navi = () => {
     return (
         <>
         <Navbar bg="dark" variant="dark">
@@ -25,4 +24,4 @@ const Nav = () => {
         </>
     )
 } 
-export default Nav
+export default Navi
