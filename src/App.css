@@ -9,5 +9,14 @@ ul {
   margin-block-start: 0em;
   margin-block-end: 0em;
   list-style-type: none;
+  font-weight: bold;
 }
-
+.addressList {
+  padding-top:25px;
+  padding-bottom:50px;
+}
+.video {
+  padding-top:25px;
+  padding-bottom:25px;
+  justify-content: center;
+}

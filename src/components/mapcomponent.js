@@ -2,7 +2,7 @@ import React from 'react'
 
 const MapComponent = () => {
     return (
-        <div> This is the MapComponent </div>
+        <div><img src={require("./map.jpg")}></img></div>
     )
 } 
 export default MapComponent
