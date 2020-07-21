@@ -1,12 +1,38 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Dropdown from 'react-bootstrap/Dropdown'
-import { Jumbotron,Button } from 'react-bootstrap'
+import { Jumbotron,Button,Modal } from 'react-bootstrap'
 
+
+function ModalForLic (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          State Licensed and Insured
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>State License Number: ES12000087</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
 
 const Portfolio = () => {
+
+    const [modalShow, setModalShow] = React.useState(false);
+
     return (
-        <div>         
+        <div> 
             <Nav fill variant="tabs" defaultActiveKey="/portfolio">
                 <Nav.Item>
                     <Nav.Link href="/" eventKey="link-1">Home</Nav.Link>
@@ -53,7 +79,8 @@ const Portfolio = () => {
                     <li>5765 Mandy Lane Tallahassee, Florida</li>
                     <li>850-576-6847</li>
                     <li> info@billssigns.com</li>
-                    <li><a href='#'>License Info</a></li>
+                    <li className='lisenceModal' onClick={() => setModalShow(true)}>License Info</li>
+                    <ModalForLic  show={modalShow}onHide={() => setModalShow(false)}/>
             </ul>
         </div>
     )

@@ -1,14 +1,42 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 import MapComponent from './mapcomponent'
 import ReactPlayer from "react-player"
-import {Container,Row,Col} from 'react-bootstrap'
+import {Modal,Container,Row,Col} from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
 
+function ModalForLic (props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+        State Licensed and Insured
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <p>State License Number: ES12000087</p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 const Land = () => {
+
+  const [modalShow, setModalShow] = React.useState(false);
+
+
+
     return (
-        <div className='LandingContainer'>
+      <div>   
                   <Nav fill variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>
                   <Nav.Link href="/home">Home</Nav.Link>
@@ -19,12 +47,12 @@ const Land = () => {
                 <Nav.Item>
                   <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
                 </Nav.Item>
-        </Nav>
-              <Container fluid className='video'>
-                <Row  className='justify-content-center'>
+                </Nav>
+              {/* <Container className='video'>
+                <Row  >
                   <Col md='auto'><ReactPlayer url="https://www.youtube.com/watch?v=ug50zmP9I7s"  /></Col>
                 </Row>
-              </Container>
+              </Container> */}
             <Jumbotron>
                 <h1>Family Owned and Operated since 1969</h1>
                     <h3>
@@ -59,7 +87,8 @@ const Land = () => {
                     <li>5765 Mandy Lane Tallahassee, Florida</li>
                     <li>850-576-6847</li>
                     <li> info@billssigns.com</li>
-                    <li><a href='#'>License Info</a></li>
+                    <li className='lisenceModal' onClick={() => setModalShow(true)}>License Info</li>
+                    <ModalForLic  show={modalShow}onHide={() => setModalShow(false)}/>
                 </ul>
         </div>
         
