@@ -19,10 +19,10 @@ class App extends Component {
           <Navi />
         <Router>
           <Switch>
-            <Route exact path='/'>
+            <Route exact path='/contact'>
               <Land />
             </Route>
-            <Route exact path='/contact'>
+            <Route exact path='/'>
               <Contact />
             </Route>
             <Route exact path='/portfolio'>
