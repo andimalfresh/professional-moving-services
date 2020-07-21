@@ -39,7 +39,7 @@ const Land = () => {
       <div>   
                   <Nav fill variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>
-                  <Nav.Link href="/home">Home</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item variant="danger">
                   <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>

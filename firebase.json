@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!{/bower_components,/src}/**",
         "destination": "/index.html"
       }
     ]
