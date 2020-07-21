@@ -74,7 +74,7 @@ const Portfolio = () => {
                     </Dropdown.Menu>
                 </Dropdown>
             </Jumbotron>
-            <a href="tel:850-576-6847"><Button variant="danger" className='callButton'>Call Us Today</Button></a>
+            <a href="tel:850-576-6847"><Button variant="danger">Call Us Today</Button></a>
             <ul className='addressList'>
                     <li>5765 Mandy Lane Tallahassee, Florida</li>
                     <li>850-576-6847</li>
