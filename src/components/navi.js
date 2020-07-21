@@ -1,10 +1,5 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import Form from 'react-bootstrap/Form'
-import FormControl from 'react-bootstrap/FormControl'
-import Button from 'react-bootstrap/Button'
-import Nav from 'react-bootstrap/Nav'
 
 const Navi = () => {
     return (
@@ -13,12 +8,11 @@ const Navi = () => {
             <Navbar.Brand href="#home">
             <img
                 alt=""
-                src="logo.svg"
-                width="30"
+                src={require("./img/LogoBad.jpg")}
+                width="50"
                 height="30"
                 className="d-inline-block align-top"
-            />{' '}
-            Bills Signs
+            /> <span className="smallTitle"> Serving Tallahassee Since 1969</span>
             </Navbar.Brand>
         </Navbar>
         </>

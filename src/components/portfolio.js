@@ -1,6 +1,8 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Dropdown from 'react-bootstrap/Dropdown'
+import { Jumbotron,Button } from 'react-bootstrap'
+
 
 const Portfolio = () => {
     return (
@@ -16,7 +18,7 @@ const Portfolio = () => {
                     <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
                 </Nav.Item>
             </Nav>
-            <div>
+            <Jumbotron>
                 <div className="contentDiv">
                 <h1>Services</h1>
                     Don't have a clue what you need at your site?
@@ -28,8 +30,8 @@ const Portfolio = () => {
                         </ul>
                 </div>
                 <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Dropdown Button
+                    <Dropdown.Toggle variant="danger" id="dropdown-basic">
+                        Services
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
@@ -45,7 +47,14 @@ const Portfolio = () => {
                         <Dropdown.Item href="#/action-3">Pylon Signs</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-            </div>
+            </Jumbotron>
+            <a href="tel:850-576-6847"><Button variant="danger" className='callButton'>Call Us Today</Button></a>
+            <ul className='addressList'>
+                    <li>5765 Mandy Lane Tallahassee, Florida</li>
+                    <li>850-576-6847</li>
+                    <li> info@billssigns.com</li>
+                    <li><a href='#'>License Info</a></li>
+            </ul>
         </div>
     )
 } 

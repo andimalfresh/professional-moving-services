@@ -9,8 +9,7 @@ import Portfolio from './components/portfolio'
 import  {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 class App extends Component {
