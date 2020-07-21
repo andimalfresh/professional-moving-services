@@ -4,31 +4,27 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
 const Portfolio = () => {
     return (
-        <div>         
+        <div className="contentDiv">         
             <Nav fill variant="tabs" defaultActiveKey="/portfolio">
                 <Nav.Item>
-                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/" eventKey="link-1">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
+                    <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
                 </Nav.Item>
             </Nav>
             <div>
-                <div>
+                <div className="contentDiv">
                 <h2>Services</h2>
                     Don't have a clue what you need at your site?
                     Give us a call and our team of professionals will guide you in the right direction. We will work with you through the whole process:
-                        <ul>
-                            <li>Survey</li>
-                            <li>Logo design</li>
-                            <li>Sign design</li>
-                            <li>Permitting *</li>
-                            <li>Construction</li>
-                            <li>Installation</li>
-                            <li>Maintenance</li>
+                        <ul className='servicesList'>
+                            <li>• Survey • Logo design • Sign design •</li> 
+                            <li>• Maintenance • Permitting* •</li>
+                            <li>• Construction • Installation •</li>
                         </ul>
                 </div>
                 <Dropdown>

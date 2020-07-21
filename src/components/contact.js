@@ -6,17 +6,18 @@ const Contact = () => {
         <div>
             <Nav fill variant="tabs" defaultActiveKey="/contact">
                 <Nav.Item>
-                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/" eventKey="link-2">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
+                  <Nav.Link href='/contact' >Contact</Nav.Link>
                 </Nav.Item>
             </Nav>
-
+            <div className="contentDiv">
              This is the Contact
+            </div>
         </div>
     )
 } 

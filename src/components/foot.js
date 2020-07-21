@@ -34,7 +34,6 @@ const Foot = () => {
           />{' '}
           INSTA
         </Navbar.Brand>
-        <a href='#'>Legal</a>
       </Navbar></div>
     )
 } 

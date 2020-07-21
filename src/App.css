@@ -15,11 +15,18 @@ ul {
   padding-top:25px;
   padding-bottom:50px;
 }
-.video {
+.video, .callButton {
   padding-top:25px;
   padding-bottom:25px;
   justify-content: center;
 }
 a:link,a:visited { 
   text-decoration: none; 
+}
+.emphText {
+  padding-right: 10px;
+  font-weight: bold;
+}
+.contentDiv {
+  padding-top:50px;
 }
