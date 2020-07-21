@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
 const Portfolio = () => {
     return (
-        <div className="contentDiv">         
+        <div>         
             <Nav fill variant="tabs" defaultActiveKey="/portfolio">
                 <Nav.Item>
                     <Nav.Link href="/" eventKey="link-1">Home</Nav.Link>
@@ -18,7 +18,7 @@ const Portfolio = () => {
             </Nav>
             <div>
                 <div className="contentDiv">
-                <h2>Services</h2>
+                <h1>Services</h1>
                     Don't have a clue what you need at your site?
                     Give us a call and our team of professionals will guide you in the right direction. We will work with you through the whole process:
                         <ul className='servicesList'>
