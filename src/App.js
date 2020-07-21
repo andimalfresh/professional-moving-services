@@ -22,10 +22,10 @@ class App extends Component {
             <Route exact path='/'>
               <Land />
             </Route>
-            <Route path='/contact'>
+            <Route exact path='/contact'>
               <Contact />
             </Route>
-            <Route path='/portfolio'>
+            <Route exact path='/portfolio'>
               <Portfolio />
             </Route>
           </Switch>
