@@ -40,7 +40,7 @@ const Contact = () => {
                   <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href='/contact' >Contact</Nav.Link>
+                  <Nav.Link href='/contact'>Contact</Nav.Link>
                 </Nav.Item>
             </Nav>
             <Jumbotron>
