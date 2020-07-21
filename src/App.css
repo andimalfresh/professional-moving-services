@@ -16,8 +16,8 @@ ul {
   padding-bottom:50px;
 }
 .video, .callButton {
-  padding-top:25px;
-  padding-bottom:25px;
+  margin-top:25px;
+  margin-bottom:25px;
   justify-content: center;
 }
 a:link,a:visited { 
