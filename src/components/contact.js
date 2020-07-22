@@ -32,6 +32,13 @@ const Contact = () => {
     return (
 
         <div>
+            <style type="text/css">
+              {`
+              .a-blk {
+                text-decoration: none;
+              }
+              `}
+            </style>
             <Nav fill variant="tabs" defaultActiveKey="/contact">
                 <Nav.Item>
                   <Nav.Link href="/" eventKey="link-2">Home</Nav.Link>
@@ -48,7 +55,7 @@ const Contact = () => {
              <h1>Contact Us</h1>
              <h4>We would love to hear from you! Feel free to drop us an email with any questions you may have below.</h4>
                 <ul><span className="redText">Sales:</span>
-                    <li><a href="mailto:bruce@billssigns.com">Bruce Screws</a></li>
+                    <li><a variant='blk' href="mailto:bruce@billssigns.com">Bruce Screws</a></li>
                     <li><a href="mailto:wayne@billssigns.com">Wayne Funderburke</a></li>
                     <li><a href="mailto:info@billssigns.com">General Inquiries</a></li>
                 </ul>

@@ -37,7 +37,7 @@ const Land = () => {
 
     return (
       <div>   
-                  <Nav fill variant="tabs" defaultActiveKey="/home">
+                <Nav fill variant="tabs" defaultActiveKey="/">
                 <Nav.Item>
                   <Nav.Link href="/">Home</Nav.Link>
                 </Nav.Item>

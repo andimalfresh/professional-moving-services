@@ -27,9 +27,36 @@ function ModalForLic (props) {
     );
   }
 
+  function ModalForBanner (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/banners/img1.jpg')} />
+            <img src={require('./img/banners/img2.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
 const Portfolio = () => {
 
     const [modalShow, setModalShow] = React.useState(false);
+    const [bannerShow, setBannerShow] = React.useState(false);
 
     return (
         <div> 
@@ -57,11 +84,12 @@ const Portfolio = () => {
                 </div>
                 <Dropdown>
                     <Dropdown.Toggle variant="danger" id="dropdown-basic">
-                        Services
+                        Services&nbsp; 
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Banners</Dropdown.Item>
+                        <Dropdown.Item onClick={() => setBannerShow(true)}>Banners</Dropdown.Item>
+                        <ModalForBanner show={bannerShow}onHide={() => setBannerShow(false)}/>
                         <Dropdown.Item href="#/action-2">Boat Letters</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Channel Letters</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Electronic Message Signs</Dropdown.Item>
