@@ -54,10 +54,10 @@ const Land = () => {
                 </Row>
               </Container> */}
             <Jumbotron>
-                <h1>Family Owned and Operated since 1969</h1>
-                    <h3>
-                        <i>Three important things to look for in your sign partner:</i>
-                    </h3>
+                <h3>Family Owned and Operated since 1969</h3>
+                    <span className='redText'>
+                        <b>Three important things to look for in your sign partner:</b>
+                    </span>
                     <p>
                         <span className='emphText'>Quality:</span> 
                         Cheap signs can ruin your company's image.
@@ -73,7 +73,7 @@ const Land = () => {
                         How much do you spend per month on advertisement with meager results?
                     </p>
 
-                    <ul className='contactBlurb'><span className='emphText'>Get the most for your budget. Call us about:</span> 
+                    <ul className='blurb'><span className='emphText'>Get the most for your budget. Call us about:</span> 
                         <li>Daily Traffic</li>
                         <li>Best Type of Sign</li>
                         <li>Effective Sign Design</li>

@@ -53,10 +53,75 @@ function ModalForLic (props) {
     );
   }
 
+  function ModalForBoatLetter (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Boat Lettering
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <p><span className="blurb">Flordia Law concerning Registration Decal and Numbers: Your decal must be renewed annually and must be displayed within Six Inches of your registraion numbers on the port side.</span>
+              <ul>Registration numbers have the following requirements:
+                  <li>Minimum 3 inches tall</li>  
+                  <li>Block Letters</li>  
+                  <li>Displayed on both sides of vessel</li>  
+                  <li>Stand out from boat color</li>  
+                  <li>Letters must be seperated from the numbers by a hyphen or equivelent space</li>  
+                  <li>Permanent Materials must be used, such as Vinyl decals or Paint</li>  
+              </ul>
+            </p>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForChannelLetter (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
 const Portfolio = () => {
 
     const [modalShow, setModalShow] = React.useState(false);
     const [bannerShow, setBannerShow] = React.useState(false);
+    const [boatLetterShow, setBoatLetterShow] = React.useState(false);
+    const [channelLettersShow, setChannelLettersShow] = React.useState(false);
 
     return (
         <div> 
@@ -90,8 +155,10 @@ const Portfolio = () => {
                     <Dropdown.Menu>
                         <Dropdown.Item onClick={() => setBannerShow(true)}>Banners</Dropdown.Item>
                         <ModalForBanner show={bannerShow}onHide={() => setBannerShow(false)}/>
-                        <Dropdown.Item href="#/action-2">Boat Letters</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Channel Letters</Dropdown.Item>
+                        <Dropdown.Item onClick={() => setBoatLetterShow(true)}>Boat Letters</Dropdown.Item>
+                        <ModalForBoatLetter show={boatLetterShow}onHide={() => setBoatLetterShow(false)}/>
+                        <Dropdown.Item onClick={() => setChannelLettersShow(true)}>Channel Letters</Dropdown.Item>
+                        <ModalForChannelLetter show={channelLettersShow}onHide={() => setChannelLettersShow(false)}/>
                         <Dropdown.Item href="#/action-3">Electronic Message Signs</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Flag Poles</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Monument</Dropdown.Item>
