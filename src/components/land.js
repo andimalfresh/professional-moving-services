@@ -38,15 +38,15 @@ const Land = () => {
     return (
       <div>   
                 <Nav fill variant="tabs" defaultActiveKey="/">
-                <Nav.Item>
-                  <Nav.Link href="/">Home</Nav.Link>
-                </Nav.Item>
-                <Nav.Item variant="danger">
-                  <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
-                </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link href="/">Home</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item variant="danger">
+                    <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
+                  </Nav.Item>
                 </Nav>
               {/* <Container className='video'>
                 <Row  >
@@ -73,7 +73,7 @@ const Land = () => {
                         How much do you spend per month on advertisement with meager results?
                     </p>
 
-                    <ul><span className='emphText'>Get the most for your budget. Call us about:</span> 
+                    <ul className='contactBlurb'><span className='emphText'>Get the most for your budget. Call us about:</span> 
                         <li>Daily Traffic</li>
                         <li>Best Type of Sign</li>
                         <li>Effective Sign Design</li>
