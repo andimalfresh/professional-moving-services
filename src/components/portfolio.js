@@ -5,27 +5,30 @@ import { Jumbotron,Button,Modal } from 'react-bootstrap'
 
 
 function ModalForLic (props) {
-    return (
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-          State Licensed and Insured
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>State License Number: ES12000087</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
-      </Modal>
-    );
-  }
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+        State Licensed and Insured
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <p>The City of Tallahassee now requires sign companies to have a state license. If they don't, they cannot pull a permit!</p>
+        <p>We were the First Sign Company in Tallahassee to obtain a <span className="experpt">State License ES12000087</span>.</p> 
+        <p> We qualified on 4/26/2002, which was well before the City of Tallahassee required sign contractors to obtain a state license.
+            Don't be duped by other Sign Companies who aren't properly qualified.</p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
   function ModalForBanner (props) {
     return (
@@ -319,6 +322,93 @@ function ModalForLic (props) {
     );
   }
 
+  function ModalForVehicle (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForVinyl (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForWall (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
 const Portfolio = () => {
 
     const [modalShow, setModalShow] = React.useState(false);
@@ -332,6 +422,9 @@ const Portfolio = () => {
     const [plaqueShow, setPlaqueShow] = React.useState(false);
     const [poleShow, setPoleShow] = React.useState(false);
     const [pylonShow, setPylonShow] = React.useState(false);
+    const [vehicleShow, setVehicleShow] = React.useState(false);
+    const [vinylShow, setVinylShow] = React.useState(false);
+    const [wallShow, setWallShow] = React.useState(false);
 
     return (
         <div> 
@@ -385,6 +478,12 @@ const Portfolio = () => {
                         <ModalForPole show={poleShow}onHide={() => setPoleShow(false)}/>
                         <Dropdown.Item onClick={() => setPylonShow(true)}>Pylon Signs</Dropdown.Item>
                         <ModalForPylon show={pylonShow}onHide={() => setPylonShow(false)}/>
+                        <Dropdown.Item onClick={() => setVehicleShow(true)}>Fleet/Vehicle Signs</Dropdown.Item>
+                        <ModalForVehicle show={vehicleShow}onHide={() => setVehicleShow(false)}/>
+                        <Dropdown.Item onClick={() => setVinylShow(true)}>Vinyl Lettering</Dropdown.Item>
+                        <ModalForVinyl show={vinylShow}onHide={() => setVinylShow(false)}/>
+                        <Dropdown.Item onClick={() => setWallShow(true)}>Wall Signs</Dropdown.Item>
+                        <ModalForWall show={wallShow}onHide={() => setWallShow(false)}/>
                     </Dropdown.Menu>
                 </Dropdown>
             </Jumbotron>
