@@ -46,7 +46,7 @@ const Contact = () => {
             <Jumbotron>
             <div className="contentDiv">
              <h1>Contact Us</h1>
-             <div className="blurb">We would love to hear from you! Feel free to drop us an email with any questions you may have below.</div>
+             <div className="blurb">We would love to hear from you! Click on any of the names in <b>bold black</b> lettering below to send us an email.</div>
                 <ul><span className="redText">Sales:</span>
                     <li><a variant='blk' href="mailto:bruce@billssigns.com">Bruce Screws</a></li>
                     <li><a href="mailto:wayne@billssigns.com">Wayne Funderburke</a></li>

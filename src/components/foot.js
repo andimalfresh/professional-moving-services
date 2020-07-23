@@ -7,31 +7,31 @@ const Foot = () => {
           <Navbar bg="dark" variant="dark" fixed="bottom" className="justify-content-center" >
           <Navbar.Brand href="mailto:info@billssigns.com">
             <img
-              // alt="Connect with us via Email"
+              alt="Connect with us via Email"
               src={require("./img/email.png")}
               width="30"
               height="30"
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
-          <Navbar.Brand target="_blank" rel="noopener noreferrer" href="http://facebook.com">
+          <Navbar.Brand target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BillsSignsAndServiceInc">
             <img
-              // alt="Connect with us on Facebook"
+              alt="Connect with us on Facebook"
               src={require("./img/facebook.svg")}
               width="30"
               height="30"
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
-          <Navbar.Brand target="_blank" rel="noopener noreferrer" href="http://instagram.com">
+          {/* <Navbar.Brand target="_blank" rel="noopener noreferrer" href="http://instagram.com">
             <img
-              // alt="Connect with us on Instagram"
+              alt="Connect with us on Instagram"
               src={require("./img/insta.svg")}
               width="30"
               height="30"
               className="d-inline-block align-top"
             />
-          </Navbar.Brand>
+          </Navbar.Brand> */}
         </Navbar>
       </div>
     )

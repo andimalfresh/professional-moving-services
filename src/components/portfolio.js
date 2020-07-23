@@ -116,12 +116,222 @@ function ModalForLic (props) {
     );
   }
 
+  function ModalForMessage (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForFlag (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForMonmument (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForTenant (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForPlaque (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForPole (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  function ModalForPylon (props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          Banners
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className='modalDiv'>
+            <img src={require('./img/channel/img1.jpg')} />
+            <img src={require('./img/channel/img2.jpg')} />
+            <img src={require('./img/channel/img3.jpg')} />
+            <img src={require('./img/channel/img4.jpg')} />
+            <img src={require('./img/channel/img5.jpg')} />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
 const Portfolio = () => {
 
     const [modalShow, setModalShow] = React.useState(false);
     const [bannerShow, setBannerShow] = React.useState(false);
     const [boatLetterShow, setBoatLetterShow] = React.useState(false);
     const [channelLettersShow, setChannelLettersShow] = React.useState(false);
+    const [messageShow, setMessageShow] = React.useState(false);
+    const [flagShow, setFlagShow] = React.useState(false);
+    const [monmumentShow, setMonmumentShow] = React.useState(false);
+    const [tenantShow, setTenantShow] = React.useState(false);
+    const [plaqueShow, setPlaqueShow] = React.useState(false);
+    const [poleShow, setPoleShow] = React.useState(false);
+    const [pylonShow, setPylonShow] = React.useState(false);
 
     return (
         <div> 
@@ -147,7 +357,8 @@ const Portfolio = () => {
                             <li>• Construction • Installation •</li>
                         </ul>
                 </div>
-                <Dropdown>
+                <span className='exerpt'>Use the services button below to check out what we can make for your business.</span>
+                <Dropdown className="buttonPadding">
                     <Dropdown.Toggle variant="danger" id="dropdown-basic">
                         Services&nbsp; 
                     </Dropdown.Toggle>
@@ -159,13 +370,21 @@ const Portfolio = () => {
                         <ModalForBoatLetter show={boatLetterShow}onHide={() => setBoatLetterShow(false)}/>
                         <Dropdown.Item onClick={() => setChannelLettersShow(true)}>Channel Letters</Dropdown.Item>
                         <ModalForChannelLetter show={channelLettersShow}onHide={() => setChannelLettersShow(false)}/>
-                        <Dropdown.Item href="#/action-3">Electronic Message Signs</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Flag Poles</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Monument</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Multiple Tenant Signs</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Plaques</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Pole Signs</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Pylon Signs</Dropdown.Item>
+
+                        <Dropdown.Item onClick={() => setMessageShow(true)}>Electronic Message Signs</Dropdown.Item>
+                        <ModalForMessage show={messageShow}onHide={() => setMessageShow(false)}/>
+                        <Dropdown.Item onClick={() => setFlagShow(true)}>Flag Poles</Dropdown.Item>
+                        <ModalForFlag show={flagShow}onHide={() => setFlagShow(false)}/>
+                        <Dropdown.Item onClick={() => setMonmumentShow(true)}>Monument</Dropdown.Item>
+                        <ModalForMonmument show={monmumentShow}onHide={() => setMonmumentShow(false)}/>
+                        <Dropdown.Item onClick={() => setTenantShow(true)}>Multiple Tenant Signs</Dropdown.Item>
+                        <ModalForTenant show={tenantShow}onHide={() => setTenantShow(false)}/>
+                        <Dropdown.Item onClick={() => setPlaqueShow(true)}>Plaques</Dropdown.Item>
+                        <ModalForPlaque show={plaqueShow}onHide={() => setPlaqueShow(false)}/>
+                        <Dropdown.Item onClick={() => setPoleShow(true)}>Pole Signs</Dropdown.Item>
+                        <ModalForPole show={poleShow}onHide={() => setPoleShow(false)}/>
+                        <Dropdown.Item onClick={() => setPylonShow(true)}>Pylon Signs</Dropdown.Item>
+                        <ModalForPylon show={pylonShow}onHide={() => setPylonShow(false)}/>
                     </Dropdown.Menu>
                 </Dropdown>
             </Jumbotron>
