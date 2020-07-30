@@ -17,11 +17,12 @@ function ModalForLic (props) {
         State Licensed and Insured
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="modalDiv">
         <p>The City of Tallahassee now requires sign companies to have a state license. If they don't, they cannot pull a permit!</p>
         <p>We were the First Sign Company in Tallahassee to obtain a <span className="experpt">State License ES12000087</span>.</p> 
         <p> We qualified on 4/26/2002, which was well before the City of Tallahassee required sign contractors to obtain a state license.
             Don't be duped by other Sign Companies who aren't properly qualified.</p>
+            <img id="logoImgModal" src={require('./img/billsLogo.png')} alt='logo' />    
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -409,7 +410,7 @@ function ModalForLic (props) {
     );
   }
 
-const Portfolio = () => {
+const Services = () => {
 
     const [modalShow, setModalShow] = React.useState(false);
     const [bannerShow, setBannerShow] = React.useState(false);
@@ -428,12 +429,12 @@ const Portfolio = () => {
 
     return (
         <div> 
-            <Nav fill variant="tabs" defaultActiveKey="/portfolio">
+            <Nav fill variant="tabs" defaultActiveKey="/services">
                 <Nav.Item>
                     <Nav.Link href="/" eventKey="link-1">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+                    <Nav.Link href="/services">Services</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
@@ -441,13 +442,16 @@ const Portfolio = () => {
             </Nav>
             <Jumbotron>
                 <div className="contentDiv">
+                <img className="logoImg" src={require('./img/billsLogo.png')} alt='logo' />
                 <h1>Services</h1>
                     Don't have a clue what you need at your site?
                     Give us a call and our team of professionals will guide you in the right direction. We will work with you through the whole process:
                         <ul className='servicesList'>
-                            <li>• Survey • Logo design • Sign design •</li> 
-                            <li>• Maintenance • Permitting* •</li>
-                            <li>• Construction • Installation •</li>
+                            <li>• Consulting • Survey • </li> 
+                            <li>• Design • Permitting  •</li>
+                            <li>• Manufacture and Construction •</li>
+                            <li>• Installation • Service and Maintenance  •</li>
+                            <li>• Warranty •</li>
                         </ul>
                 </div>
                 <span className='exerpt'>Use the services button below to check out what we can make for your business.</span>
@@ -463,7 +467,6 @@ const Portfolio = () => {
                         <ModalForBoatLetter show={boatLetterShow}onHide={() => setBoatLetterShow(false)}/>
                         <Dropdown.Item onClick={() => setChannelLettersShow(true)}>Channel Letters</Dropdown.Item>
                         <ModalForChannelLetter show={channelLettersShow}onHide={() => setChannelLettersShow(false)}/>
-
                         <Dropdown.Item onClick={() => setMessageShow(true)}>Electronic Message Signs</Dropdown.Item>
                         <ModalForMessage show={messageShow}onHide={() => setMessageShow(false)}/>
                         <Dropdown.Item onClick={() => setFlagShow(true)}>Flag Poles</Dropdown.Item>
@@ -498,4 +501,4 @@ const Portfolio = () => {
         </div>
     )
 } 
-export default Portfolio
+export default Services

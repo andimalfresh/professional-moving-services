@@ -5,7 +5,7 @@ import Contact from './components/contact'
 import Foot from './components/foot'
 import Land from'./components/land'
 import Navi from './components/navi'
-import Portfolio from './components/portfolio'
+import Services from './components/services'
 import  {
   BrowserRouter as Router,
   Switch,
@@ -22,8 +22,8 @@ class App extends Component {
             <Route exact path='/'>
               <Land />
             </Route>
-            <Route path='/portfolio'>
-              <Portfolio />
+            <Route path='/services'>
+              <Services />
             </Route>
             <Route path='/contact'>
               <Contact />

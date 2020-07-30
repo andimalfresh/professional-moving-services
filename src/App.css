@@ -1,4 +1,7 @@
-
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
 .App {
   text-align: center;
   display: flex;
@@ -10,6 +13,16 @@ ul {
   margin-block-end: 0em;
   list-style-type: none;
   font-weight: bold;
+}
+.logoImg {
+  height: 152px;
+  width: 250px;
+  padding-bottom: 15px;
+}
+.carouselCaption {
+  background-color: grey;
+  border-radius: 25px;
+  opacity: .8;
 }
 .addressList,.servicesList {
   padding-top:25px;
@@ -56,4 +69,18 @@ a:link,a:visited {
 }
 .buttonPadding {
   padding-top:25px;
+}
+#logoImgModal {
+  height: 75px;
+  width: 125px;
+}
+@media only screen and (min-width: 768px) {
+.logoImg {
+    width: 500px;
+    height: 304px;
+  }
+  .carousel {
+    height: auto;
+    width: 50%;
+  }
 }

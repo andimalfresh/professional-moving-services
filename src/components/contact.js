@@ -15,11 +15,12 @@ function ModalForLic (props) {
         State Licensed and Insured
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="modalDiv">
         <p>The City of Tallahassee now requires sign companies to have a state license. If they don't, they cannot pull a permit!</p>
         <p>We were the First Sign Company in Tallahassee to obtain a <span className="experpt">State License ES12000087</span>.</p> 
         <p> We qualified on 4/26/2002, which was well before the City of Tallahassee required sign contractors to obtain a state license.
             Don't be duped by other Sign Companies who aren't properly qualified.</p>
+            <img id="logoImgModal" src={require('./img/billsLogo.png')} alt='logo' />    
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -40,7 +41,7 @@ const Contact = () => {
                   <Nav.Link href="/" eventKey="link-2">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
+                  <Nav.Link href="/services" eventKey="link-1">Services</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href='/contact'>Contact</Nav.Link>
@@ -48,6 +49,7 @@ const Contact = () => {
             </Nav>
             <Jumbotron>
             <div className="contentDiv">
+            <img className="logoImg" src={require('./img/billsLogo.png')} alt='logo' />
              <h1>Contact Us</h1>
              <div className="blurb">We would love to hear from you! Click on any of the names in <b>bold black</b> lettering below to send us an email.</div>
                 <ul><span className="redText">Sales:</span>

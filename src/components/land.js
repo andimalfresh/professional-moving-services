@@ -3,7 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 import MapComponent from './mapcomponent'
 import ReactPlayer from "react-player"
-import {Modal,Container,Row,Col} from 'react-bootstrap'
+import {Modal,Carousel} from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
 
 function ModalForLic (props) {
@@ -19,11 +19,12 @@ function ModalForLic (props) {
         State Licensed and Insured
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="modalDiv">
         <p>The City of Tallahassee now requires sign companies to have a state license. If they don't, they cannot pull a permit!</p>
         <p>We were the First Sign Company in Tallahassee to obtain a <span className="experpt">State License ES12000087</span>.</p> 
         <p> We qualified on 4/26/2002, which was well before the City of Tallahassee required sign contractors to obtain a state license.
             Don't be duped by other Sign Companies who aren't properly qualified.</p>
+            <img id="logoImgModal" src={require('./img/billsLogo.png')} alt='logo' />           
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
@@ -39,24 +40,52 @@ const Land = () => {
 
 
     return (
-      <div>   
+      <div className="landingContainer">   
                 <Nav fill variant="tabs" defaultActiveKey="/">
                   <Nav.Item>
                     <Nav.Link href="/">Home</Nav.Link>
                   </Nav.Item>
                   <Nav.Item variant="danger">
-                    <Nav.Link href="/portfolio" eventKey="link-1">Portfolio</Nav.Link>
+                    <Nav.Link href="/services" eventKey="link-1">Services</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link href='/contact' eventKey="link-2">Contact</Nav.Link>
                   </Nav.Item>
                 </Nav>
+                <div className='d-flex justify-content-center'>
+                <Carousel className='p-2'>
+                  <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={require('./img/channel/img7.jpg')}
+                    alt="First slide"
+                  />
+                  <Carousel.Caption className='carouselCaption'>
+                    <h3>First Image</h3>
+                    <p>(optional caption for first image)</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={require('./img/channel/img7.jpg')}
+                    alt="Second slide"
+                  />
+
+                  <Carousel.Caption className='carouselCaption'>
+                    <h3>Second Image</h3>
+                    <p>(optional caption for second image)</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+              </div>
               {/* <Container className='video'>
                 <Row  >
                   <Col md='auto'><ReactPlayer url="https://www.youtube.com/watch?v=ug50zmP9I7s"  /></Col>
                 </Row>
               </Container> */}
             <Jumbotron>
+            <img className="logoImg" src={require('./img/billsLogo.png')} alt='logo' />
                 <h3>Family Owned and Operated since 1969</h3>
                     <span className='redText'>
                         <b>Three important things to look for in your sign partner:</b>
