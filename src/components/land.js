@@ -2,9 +2,9 @@ import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 import MapComponent from './mapcomponent'
-import ReactPlayer from "react-player"
 import {Modal,Carousel} from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
+
 
 function ModalForLic (props) {
   return (
@@ -34,6 +34,9 @@ function ModalForLic (props) {
 }
 
 const Land = () => {
+
+
+  
 
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -113,8 +116,7 @@ const Land = () => {
                     </ul>
                         <a href="tel:850-576-6847"><Button variant="danger" className='callButton'>Call Us Today</Button></a> 
               </Jumbotron>                
-            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13759.565654649115!2d-84.372066!3d30.43918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbee05e2b1418f560!2sBill&#39;s%20Signs%20%26%20Services%20Inc!5e0!3m2!1sen!2sus!4v1595200673085!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> */}
-                <MapComponent />
+                <div className='d-flex justify-content-center'><MapComponent /></div>
                 <ul className='addressList'>
                     <li>5765 Mandy Lane Tallahassee, Florida</li>
                     <li>850-576-6847</li>

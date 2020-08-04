@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "bulma": "^0.9.0",
+    "google-map-react": "^2.0.4",
     "google-maps-react": "^2.0.6",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
