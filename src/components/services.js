@@ -31,7 +31,7 @@ function ModalForLic (props) {
   );
 }
 
-  function ModalForBanner (props) {
+  function ModalForLighted (props) {
     return (
       <Modal
         {...props}
@@ -41,7 +41,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+          Lighted Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -57,7 +57,7 @@ function ModalForLic (props) {
     );
   }
 
-  function ModalForBoatLetter (props) {
+  function ModalForWayFinding (props) {
     return (
       <Modal
         {...props}
@@ -67,21 +67,13 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Boat Lettering
+          Way Finding/ Drive-thru Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className='modalDiv'>
-            <p><span className="blurb">Flordia Law concerning Registration Decal and Numbers: Your decal must be renewed annually and must be displayed within Six Inches of your registraion numbers on the port side.</span>
-              <ul>Registration numbers have the following requirements:
-                  <li>Minimum 3 inches tall</li>  
-                  <li>Block Letters</li>  
-                  <li>Displayed on both sides of vessel</li>  
-                  <li>Stand out from boat color</li>  
-                  <li>Letters must be seperated from the numbers by a hyphen or equivelent space</li>  
-                  <li>Permanent Materials must be used, such as Vinyl decals or Paint</li>  
-              </ul>
-            </p>
+            <img src={require('./img/banners/img1.jpg')} />
+            <img src={require('./img/banners/img2.jpg')} />
           </div>
         </Modal.Body>
         <Modal.Footer>
@@ -101,7 +93,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+          Channel Lettering Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -130,7 +122,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+          Electronic Message Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -159,7 +151,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Flag Poles
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -188,7 +180,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Monmument Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -217,7 +209,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Tenant Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -246,7 +238,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Plaques
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -275,7 +267,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Pole Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -294,7 +286,7 @@ function ModalForLic (props) {
     );
   }
 
-  function ModalForPylon (props) {
+  function ModalForShoppingCenter (props) {
     return (
       <Modal
         {...props}
@@ -304,7 +296,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Shopping Center Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -322,36 +314,7 @@ function ModalForLic (props) {
       </Modal>
     );
   }
-
-  function ModalForVehicle (props) {
-    return (
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-          Banners
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <div className='modalDiv'>
-            <img src={require('./img/channel/img1.jpg')} />
-            <img src={require('./img/channel/img2.jpg')} />
-            <img src={require('./img/channel/img3.jpg')} />
-            <img src={require('./img/channel/img4.jpg')} />
-            <img src={require('./img/channel/img5.jpg')} />
-          </div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
-      </Modal>
-    );
-  }
-
+  
   function ModalForVinyl (props) {
     return (
       <Modal
@@ -362,7 +325,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Vinyl Lettering
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -391,7 +354,7 @@ function ModalForLic (props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Banners
+            Wall Signs
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -413,8 +376,8 @@ function ModalForLic (props) {
 const Services = () => {
 
     const [modalShow, setModalShow] = React.useState(false);
-    const [bannerShow, setBannerShow] = React.useState(false);
-    const [boatLetterShow, setBoatLetterShow] = React.useState(false);
+    const [lightedShow, setLightedShow] = React.useState(false);
+    const [wayFindingShow, setWayFindingShow] = React.useState(false);
     const [channelLettersShow, setChannelLettersShow] = React.useState(false);
     const [messageShow, setMessageShow] = React.useState(false);
     const [flagShow, setFlagShow] = React.useState(false);
@@ -422,8 +385,7 @@ const Services = () => {
     const [tenantShow, setTenantShow] = React.useState(false);
     const [plaqueShow, setPlaqueShow] = React.useState(false);
     const [poleShow, setPoleShow] = React.useState(false);
-    const [pylonShow, setPylonShow] = React.useState(false);
-    const [vehicleShow, setVehicleShow] = React.useState(false);
+    const [shoppingCenterShow, setShoppingCenterShow] = React.useState(false);
     const [vinylShow, setVinylShow] = React.useState(false);
     const [wallShow, setWallShow] = React.useState(false);
 
@@ -462,51 +424,52 @@ const Services = () => {
 
                     <Dropdown.Menu>
                         <Dropdown.Item onClick={() => setFlagShow(true)}>Flag Poles</Dropdown.Item>
-                        <ModalForFlag show={flagShow}onHide={() => setFlagShow(false)}/>
+                        <ModalForFlag show={flagShow} onHide={() => setFlagShow(false)}/>
 
-                        <Dropdown.Item onClick={() => setPylonShow(true)}>Lighted Signs</Dropdown.Item>
-
-
+                        <Dropdown.Item onClick={() => setLightedShow(true)}>Lighted Signs</Dropdown.Item>
+                        <ModalForLighted show={lightedShow} onHide={() => setLightedShow(false)}/>
 
                         <Dropdown.Item onClick={() => setChannelLettersShow(true)}>Channel Letters</Dropdown.Item>
-                        <ModalForChannelLetter show={channelLettersShow}onHide={() => setChannelLettersShow(false)}/>
+                        <ModalForChannelLetter show={channelLettersShow} onHide={() => setChannelLettersShow(false)}/>
 
                         <Dropdown.Item onClick={() => setMessageShow(true)}>Electronic Message Signs</Dropdown.Item>
-                        <ModalForMessage show={messageShow}onHide={() => setMessageShow(false)}/>
+                        <ModalForMessage show={messageShow} onHide={() => setMessageShow(false)}/>
 
                         <Dropdown.Item onClick={() => setPoleShow(true)}>Pole Signs</Dropdown.Item>
-                        <ModalForPole show={poleShow}onHide={() => setPoleShow(false)}/>
+                        <ModalForPole show={poleShow} onHide={() => setPoleShow(false)}/>
 
                         <Dropdown.Item onClick={() => setWallShow(true)}>Wall Signs</Dropdown.Item>
-                        <ModalForWall show={wallShow}onHide={() => setWallShow(false)}/>
+                        <ModalForWall show={wallShow} onHide={() => setWallShow(false)}/>
 
                         <Dropdown.Item onClick={() => setMonmumentShow(true)}>Monument Signs</Dropdown.Item>
-                        <ModalForMonmument show={monmumentShow}onHide={() => setMonmumentShow(false)}/>
+                        <ModalForMonmument show={monmumentShow} onHide={() => setMonmumentShow(false)}/>
 
                         <Dropdown.Item onClick={() => setPlaqueShow(true)}>Plaques</Dropdown.Item>
-                        <ModalForPlaque show={plaqueShow}onHide={() => setPlaqueShow(false)}/>
+                        <ModalForPlaque show={plaqueShow} onHide={() => setPlaqueShow(false)}/>
 
-                        <Dropdown.Item onClick={() => setPylonShow(true)}>Way Finding/Drive-Thru Signs</Dropdown.Item>
+                        <Dropdown.Item onClick={() => setWayFindingShow(true)}>Way Finding/Drive-Thru Signs</Dropdown.Item>
+                        <ModalForWayFinding show={wayFindingShow} onHide={() => setWayFindingShow(false)}/>
 
-                        <Dropdown.Item onClick={() => setPylonShow(true)}>Shopping Center Signs</Dropdown.Item>
+                        <Dropdown.Item onClick={() => setShoppingCenterShow(true)}>Shopping Center Signs</Dropdown.Item>
+                        <ModalForShoppingCenter show={shoppingCenterShow} onHide={() => setShoppingCenterShow(false)}/>
 
                         <Dropdown.Item onClick={() => setTenantShow(true)}>Tenant Signs</Dropdown.Item>
-                        <ModalForTenant show={tenantShow}onHide={() => setTenantShow(false)}/>
+                        <ModalForTenant show={tenantShow} onHide={() => setTenantShow(false)}/>
 
                         <Dropdown.Item onClick={() => setVinylShow(true)}>Vinyl Lettering</Dropdown.Item>
-                        <ModalForVinyl show={vinylShow}onHide={() => setVinylShow(false)}/>
-
+                        <ModalForVinyl show={vinylShow} onHide={() => setVinylShow(false)}/>
+{/* 
                         <Dropdown.Item onClick={() => setBannerShow(true)}>Banners</Dropdown.Item>
-                        <ModalForBanner show={bannerShow}onHide={() => setBannerShow(false)}/>
+                        <ModalForBanner show={bannerShow} onHide={() => setBannerShow(false)}/>
 
                         <Dropdown.Item onClick={() => setBoatLetterShow(true)}>Boat Letters</Dropdown.Item>
-                        <ModalForBoatLetter show={boatLetterShow}onHide={() => setBoatLetterShow(false)}/>
+                        <ModalForBoatLetter show={boatLetterShow} onHide={() => setBoatLetterShow(false)}/>
 
                        <Dropdown.Item onClick={() => setPylonShow(true)}>Pylon Signs</Dropdown.Item>
-                        <ModalForPylon show={pylonShow}onHide={() => setPylonShow(false)}/>
+                        <ModalForPylon show={pylonShow} onHide={() => setPylonShow(false)}/>
 
                         <Dropdown.Item onClick={() => setVehicleShow(true)}>Fleet/Vehicle Signs</Dropdown.Item>
-                        <ModalForVehicle show={vehicleShow}onHide={() => setVehicleShow(false)}/>
+                        <ModalForVehicle show={vehicleShow} onHide={() => setVehicleShow(false)}/> */}
 
                     </Dropdown.Menu>
                 </Dropdown>
@@ -517,7 +480,7 @@ const Services = () => {
                     <li>850-576-6847</li>
                     <li> info@billssigns.com</li>
                     <li className='lisenceModal' onClick={() => setModalShow(true)}>License Info</li>
-                    <ModalForLic  show={modalShow}onHide={() => setModalShow(false)}/>
+                    <ModalForLic  show={modalShow} onHide={() => setModalShow(false)}/>
             </ul>
         </div>
     )
