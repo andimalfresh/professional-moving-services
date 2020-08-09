@@ -82,14 +82,9 @@ const Land = () => {
                 </Carousel.Item>
               </Carousel>
               </div>
-              {/* <Container className='video'>
-                <Row  >
-                  <Col md='auto'><ReactPlayer url="https://www.youtube.com/watch?v=ug50zmP9I7s"  /></Col>
-                </Row>
-              </Container> */}
             <Jumbotron>
             <img className="logoImg" src={require('./img/billsLogo.png')} alt='logo' />
-                <h3>Family Owned and Operated since 1969</h3>
+                <h3>Tallahassee's Heavy Hitter's for Moving</h3>
                     <span className='redText'>
                         <b>Three important things to look for in your sign partner:</b>
                     </span>
@@ -108,11 +103,11 @@ const Land = () => {
                         How much do you spend per month on advertisement with meager results?
                     </p>
 
-                    <ul className='blurb'><span className='emphText'>Get the most for your budget. Call us about:</span> 
-                        <li>Daily Traffic</li>
-                        <li>Best Type of Sign</li>
-                        <li>Effective Sign Design</li>
-                        <li>All Tailored for Your Specific Location</li>
+                    <ul className='blurb'><span className='emphText'>Need to move? We can help! Call us about:</span> 
+                        <li>Residential Moves</li>
+                        <li>Commerical Moves</li>
+                        <li>Out of Town/Long Distance</li>
+                        <li>Short Notice/Emergency Moves</li>
                     </ul>
                         <a href="tel:850-576-6847"><Button variant="danger" className='callButton'>Call Us Today</Button></a> 
               </Jumbotron>                

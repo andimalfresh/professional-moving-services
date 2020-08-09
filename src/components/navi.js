@@ -14,7 +14,7 @@ const Navi = () => {
                     height="30"
                     className="d-inline-block align-top"
                 />
-                <span className="smallTitle">Bills Signs</span>
+                <span className="smallTitle">Professional Moving Services</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -35,7 +35,7 @@ const Navi = () => {
                     width="50"
                     height="30"
                     className="d-inline-block align-top"
-                /> <span className="smallTitle"> Serving Tallahassee since 1969</span>
+                /> <span className="smallTitle">Tallahassee's Heavy Hitter's for Moving</span>
                 </Navbar.Brand>
             </Navbar>
         </div>
