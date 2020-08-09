@@ -461,32 +461,53 @@ const Services = () => {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item onClick={() => setBannerShow(true)}>Banners</Dropdown.Item>
-                        <ModalForBanner show={bannerShow}onHide={() => setBannerShow(false)}/>
-                        <Dropdown.Item onClick={() => setBoatLetterShow(true)}>Boat Letters</Dropdown.Item>
-                        <ModalForBoatLetter show={boatLetterShow}onHide={() => setBoatLetterShow(false)}/>
-                        <Dropdown.Item onClick={() => setChannelLettersShow(true)}>Channel Letters</Dropdown.Item>
-                        <ModalForChannelLetter show={channelLettersShow}onHide={() => setChannelLettersShow(false)}/>
-                        <Dropdown.Item onClick={() => setMessageShow(true)}>Electronic Message Signs</Dropdown.Item>
-                        <ModalForMessage show={messageShow}onHide={() => setMessageShow(false)}/>
                         <Dropdown.Item onClick={() => setFlagShow(true)}>Flag Poles</Dropdown.Item>
                         <ModalForFlag show={flagShow}onHide={() => setFlagShow(false)}/>
-                        <Dropdown.Item onClick={() => setMonmumentShow(true)}>Monument</Dropdown.Item>
-                        <ModalForMonmument show={monmumentShow}onHide={() => setMonmumentShow(false)}/>
-                        <Dropdown.Item onClick={() => setTenantShow(true)}>Multiple Tenant Signs</Dropdown.Item>
-                        <ModalForTenant show={tenantShow}onHide={() => setTenantShow(false)}/>
-                        <Dropdown.Item onClick={() => setPlaqueShow(true)}>Plaques</Dropdown.Item>
-                        <ModalForPlaque show={plaqueShow}onHide={() => setPlaqueShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setPylonShow(true)}>Lighted Signs</Dropdown.Item>
+
+
+
+                        <Dropdown.Item onClick={() => setChannelLettersShow(true)}>Channel Letters</Dropdown.Item>
+                        <ModalForChannelLetter show={channelLettersShow}onHide={() => setChannelLettersShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setMessageShow(true)}>Electronic Message Signs</Dropdown.Item>
+                        <ModalForMessage show={messageShow}onHide={() => setMessageShow(false)}/>
+
                         <Dropdown.Item onClick={() => setPoleShow(true)}>Pole Signs</Dropdown.Item>
                         <ModalForPole show={poleShow}onHide={() => setPoleShow(false)}/>
-                        <Dropdown.Item onClick={() => setPylonShow(true)}>Pylon Signs</Dropdown.Item>
-                        <ModalForPylon show={pylonShow}onHide={() => setPylonShow(false)}/>
-                        <Dropdown.Item onClick={() => setVehicleShow(true)}>Fleet/Vehicle Signs</Dropdown.Item>
-                        <ModalForVehicle show={vehicleShow}onHide={() => setVehicleShow(false)}/>
-                        <Dropdown.Item onClick={() => setVinylShow(true)}>Vinyl Lettering</Dropdown.Item>
-                        <ModalForVinyl show={vinylShow}onHide={() => setVinylShow(false)}/>
+
                         <Dropdown.Item onClick={() => setWallShow(true)}>Wall Signs</Dropdown.Item>
                         <ModalForWall show={wallShow}onHide={() => setWallShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setMonmumentShow(true)}>Monument Signs</Dropdown.Item>
+                        <ModalForMonmument show={monmumentShow}onHide={() => setMonmumentShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setPlaqueShow(true)}>Plaques</Dropdown.Item>
+                        <ModalForPlaque show={plaqueShow}onHide={() => setPlaqueShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setPylonShow(true)}>Way Finding/Drive-Thru Signs</Dropdown.Item>
+
+                        <Dropdown.Item onClick={() => setPylonShow(true)}>Shopping Center Signs</Dropdown.Item>
+
+                        <Dropdown.Item onClick={() => setTenantShow(true)}>Tenant Signs</Dropdown.Item>
+                        <ModalForTenant show={tenantShow}onHide={() => setTenantShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setVinylShow(true)}>Vinyl Lettering</Dropdown.Item>
+                        <ModalForVinyl show={vinylShow}onHide={() => setVinylShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setBannerShow(true)}>Banners</Dropdown.Item>
+                        <ModalForBanner show={bannerShow}onHide={() => setBannerShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setBoatLetterShow(true)}>Boat Letters</Dropdown.Item>
+                        <ModalForBoatLetter show={boatLetterShow}onHide={() => setBoatLetterShow(false)}/>
+
+                       <Dropdown.Item onClick={() => setPylonShow(true)}>Pylon Signs</Dropdown.Item>
+                        <ModalForPylon show={pylonShow}onHide={() => setPylonShow(false)}/>
+
+                        <Dropdown.Item onClick={() => setVehicleShow(true)}>Fleet/Vehicle Signs</Dropdown.Item>
+                        <ModalForVehicle show={vehicleShow}onHide={() => setVehicleShow(false)}/>
+
                     </Dropdown.Menu>
                 </Dropdown>
             </Jumbotron>
